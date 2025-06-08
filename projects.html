@@ -3,64 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Projects">
-    <meta name="keywords" content="projects, portfolio">
+    <meta name="description" content="My Projects - Ahmed Al-Hajri">
+    <meta name="keywords" content="projects, portfolio, VMPT, service learning, digital platform">
     <meta name="author" content="Ahmed Al-Hajri">
     <title>Ahmed Al-Hajri - Projects</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <!-- Main Content -->
-    <div class="container mt-5 pt-5">
-        <h1>My Projects</h1>
-        <p>Below are some of the projects I have worked on:</p>
+    <div class="container my-5 pt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">My Work & Projects</h1>
+            <p class="lead text-muted">A selection of projects that showcase my skills and passion.</p>
+        </div>
 
-        <h2>Project 1: AI Chatbot</h2>
-        <p>Developed an AI chatbot for customer service using natural language processing and machine learning algorithms.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
 
-        <h2>Project 2: Web Portfolio</h2>
-        <p>This portfolio website was created using Flask and Bootstrap. It features multiple pages to showcase my work.</p>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Project+X" class="card-img-top" alt="Project X Agency">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">UoM Student Project X Agency</h5>
+                        <p class="card-text text-muted">A pioneering initiative to pilot a Virtual Multi-Disciplinary Project Team (VMPT) model for industry-facing challenges.</p>
+                        <div>
+                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">VMPT Framework</span>
+                            <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Sustainability</span>
+                            <span class="badge bg-info-subtle text-info-emphasis rounded-pill">Service Learning</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 pb-3">
+                        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#projectXModal">
+                            <i class="bi bi-eye me-2"></i>View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Project 3: Machine Learning Model</h2>
-        <p>Built a machine learning model for predicting housing prices based on multiple features.</p>
+            </div>
     </div>
 
+    <div class="modal fade" id="projectXModal" tabindex="-1" aria-labelledby="projectXModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectXModalLabel">Project X Agency: VMPT Initiative</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This pioneering internship at The University of Manchester institutionalized service learning and interdisciplinary collaboration through industry-facing projects, focusing on sustainable textile manufacturing and community engagement.</p>
+                    
+                    <h6 class="fw-bold mt-4">My Role & Responsibilities</h6>
+                    <p class="text-muted fst-italic">Note: This project involved a team of three interns with complementary skills. My focus was on [Choose and elaborate on your role: e.g., digital innovation, sustainability research, or community engagement strategy].</p>
+                    <ul>
+                        <li>Developed and piloted the Project X Agency digital platform and framework.</li>
+                        <li>Engaged with industry partners, including The Whitworth and Cunnington & Sanderson, to co-create sustainable, zero-waste textile solutions.</li>
+                        <li>Integrated research and technology such as RFID, AR, and digital printing into service-learning methodologies.</li>
+                        <li>Designed a strategic roadmap for the institutional scalability of the VMPT model.</li>
+                        <li>Created a knowledge-sharing system to document processes and findings for future student teams.</li>
+                        <li>Facilitated a project showcase and impact assessment to present findings to stakeholders.</li>
+                    </ul>
 
+                    <h6 class="fw-bold mt-4">Key Deliverables</h6>
+                    <ul>
+                        <li>A research-informed framework for scaling the Project X Agency model.</li>
+                        <li>A functional digital platform and operational framework for VMPT interdisciplinary learning.</li>
+                        <li>A case study on zero-waste textile innovation and community-engaged design.</li>
+                        <li>Contributions towards a potential academic article or conference presentation.</li>
+                        <li>A final project showcase and impact report with recommendations for long-term scalability.</li>
+                    </ul>
 
-    <!-- JS Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+                    <h6 class="fw-bold mt-4">Technologies & Skills</h6>
+                    <p>
+                        <span class="badge bg-secondary">Service Design</span>
+                        <span class="badge bg-secondary">Digital Transformation</span>
+                        <span class="badge bg-secondary">UX Research</span>
+                        <span class="badge bg-secondary">Project Management</span>
+                        <span class="badge bg-secondary">Stakeholder Engagement</span>
+                        <span class="badge bg-secondary">Sustainability</span>
+                        <span class="badge bg-secondary">Circular Economy</span>
+                        <span class="badge bg-secondary">RFID</span>
+                        <span class="badge bg-secondary">Augmented Reality (AR)</span>
+                    </p>
 
-    <!-- Load Header Dynamically -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
     <script>
-        // Load Header
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header-placeholder").innerHTML = data;
-    
-                // Highlight active link
-                const currentPage = window.location.pathname.split("/").pop();
+        function loadComponent(url, placeholderId, callback) {
+            fetch(url)
+                .then(response => response.ok ? response.text() : Promise.reject('Not found'))
+                .then(data => {
+                    const placeholder = document.getElementById(placeholderId);
+                    if (placeholder) {
+                        placeholder.innerHTML = data;
+                        if (callback) callback();
+                    }
+                })
+                .catch(error => console.error(`Error loading ${url}:`, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadComponent("header.html", "header-placeholder", () => {
+                const currentPage = window.location.pathname.split("/").pop() || "index.html";
                 const navLinks = document.querySelectorAll(".nav-page");
                 navLinks.forEach(link => {
-                    if (link.getAttribute("href") === currentPage) {
+                    const linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
                         link.classList.add("active");
                     }
                 });
             });
-    
-        // Load Footer
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
+            loadComponent("footer.html", "footer-placeholder");
+        });
     </script>
-    
 </body>
 </html>

@@ -3,63 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Me">
-    <meta name="keywords" content="contact, email, portfolio">
+    <meta name="description" content="Contact Me - Ahmed Al-Hajri">
+    <meta name="keywords" content="contact, email, portfolio, Ahmed Al-Hajri">
     <meta name="author" content="Ahmed Al-Hajri">
     <title>Ahmed Al-Hajri - Contact</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <!-- Main Content -->
-    <div class="container mt-5 pt-5">
-        <h1>Contact Me</h1>
-        <p>If you would like to get in touch, feel free to email me at <strong>ahmedalhjry1@gmail.com</strong>.</p>
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 p-md-5">
 
-        <h2>Social Links</h2>
-        <div class="d-flex flex-column gap-2">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn btn-outline-primary square-btn">LinkedIn</a>
-            <a href="https://github.com/a7jry" target="_blank" class="btn btn-outline-dark square-btn">GitHub</a>
-            <a href="https://twitter.com/a7jry" target="_blank" class="btn btn-outline-info square-btn">Twitter</a>
+                        <div class="text-center">
+                            <i class="bi bi-envelope-paper-heart fs-1 text-primary"></i>
+                            <h1 class="h2 mt-3">Get In Touch</h1>
+                            <p class="text-muted mb-4">Have a question or want to work together? Fill out the form below or connect with me on social media.</p>
+                        </div>
+
+                        <form id="contactForm" action="https://formspree.io/f/mzzgebzw" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Full Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Your Name" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddress">Email Address</label>
+                                <input class="form-control" id="emailAddress" type="email" name="email" placeholder="your.email@example.com" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your message here..." style="height: 10rem;" required></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                        
+                        <hr class="my-4">
+
+                        <div class="text-center">
+                            <p class="text-muted">Or connect with me on:</p>
+                            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="text-dark mx-2 fs-3 text-decoration-none">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/a7jry" target="_blank" class="text-dark mx-2 fs-3 text-decoration-none">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/a7jry" target="_blank" title="Instagram" class="text-dark mx-3 fs-3 text-decoration-none">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                            <a href="https://www.x.com/a7jry" target="_blank" title="X" class="text-dark mx-3 fs-3 text-decoration-none">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
     </div>
 
-
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <!-- Load Header Dynamically -->
     <script>
         // Load Header
         fetch("header.html")
-            .then(response => response.text())
+            .then(response => response.ok ? response.text() : Promise.reject('Header not found'))
             .then(data => {
                 document.getElementById("header-placeholder").innerHTML = data;
     
                 // Highlight active link
-                const currentPage = window.location.pathname.split("/").pop();
+                const currentPage = window.location.pathname.split("/").pop() || "index.html";
                 const navLinks = document.querySelectorAll(".nav-page");
                 navLinks.forEach(link => {
-                    if (link.getAttribute("href") === currentPage) {
+                    const linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
                         link.classList.add("active");
                     }
                 });
-            });
+            })
+            .catch(error => console.error('Error loading header:', error));
     
         // Load Footer
         fetch("footer.html")
-            .then(response => response.text())
+            .then(response => response.ok ? response.text() : Promise.reject('Footer not found'))
             .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
+                const footerPlaceholder = document.getElementById("footer-placeholder");
+                if (footerPlaceholder) {
+                    footerPlaceholder.innerHTML = data;
+                }
+            })
+            .catch(error => console.error('Error loading footer:', error));
     </script>
-    
 </body>
 </html>

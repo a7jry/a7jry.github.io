@@ -3,67 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of your portfolio or homepage.">
-    <meta name="keywords" content="portfolio, CV, projects, Ahmed Al-Hajri, web developer">
+    <meta name="description" content="Portfolio of Ahmed Al-Hajri, a Computer Science and Mathematics student at the University of Manchester.">
+    <meta name="keywords" content="portfolio, CV, projects, Ahmed Al-Hajri, web developer, data science, python">
     <meta name="author" content="Ahmed Al-Hajri">
     <title>Ahmed Al-Hajri - Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional custom styles -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Dynamic Navbar -->
     <div id="header-placeholder"></div>
 
-    <!-- Main Content -->
-    <div class="container mt-5 pt-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>Welcome to My Portfolio</h1>
-                <p>
-                    I am a Computer Science and Mathematics student at the University of Manchester with a passion for problem-solving using computational methods and mathematics.
-                    I have a proven leadership record as President of the Omani Students Society, where I helped transform the society into a global leader.
-                    I am skilled in AI, Machine Learning, Web Development, and have strong programming and analytical abilities.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <img src="images/me.jpg" alt="Ahmed Al-Hajri" class="img-fluid rounded-circle" style="max-width: 80%;">
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-center min-vh-100 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold">Ahmed Al-Hajri</h1>
+                    <p class="lead text-primary fw-medium">BSc Computer Science & Mathematics Student</p>
+                    <p class="text-muted">
+                        An undergraduate at the University of Manchester with experience in applying AI and mathematics to solve real-world problems. Proven leadership through roles like President of the Omani Student Society, proficient in data science, web development, and machine learning.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                        <a href="projects.html" class="btn btn-primary btn-lg px-4 me-md-2">View My Work</a>
+                        <a href="contact.html" class="btn btn-outline-secondary btn-lg px-4">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <img src="images/me.jpg" alt="Ahmed Al-Hajri" class="img-fluid rounded-circle shadow-lg" style="max-width: 350px;">
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="container my-5">
+        <section class="text-center mb-5">
+            <h2 class="display-6 fw-bold">Featured Projects</h2>
+            <p class="lead text-muted">Here's a glimpse of what I've been working on.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mt-4">
 
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Project+X" class="card-img-top" alt="Project X Agency">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">UoM Student Project X Agency</h5>
+                            <p class="card-text text-muted">A pioneering initiative to pilot a Virtual Multi-Disciplinary Project Team (VMPT) model for industry-facing challenges.</p>
+                            <div>
+                                <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">VMPT Framework</span>
+                                <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Sustainability</span>
+                                <span class="badge bg-info-subtle text-info-emphasis rounded-pill">Service Learning</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#projectXModal">
+                                <i class="bi bi-eye me-2"></i>View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Bootstrap JS & Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Project+Two" class="card-img-top" alt="Another Project">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Another Awesome Project</h5>
+                            <p class="card-text text-muted">A brief description of another project you're proud of. Explain the key challenge and solution.</p>
+                            <div>
+                                <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill">Machine Learning</span>
+                                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Flask</span>
+                                <span class="badge bg-dark-subtle text-dark-emphasis rounded-pill">Python</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                             <a href="#" class="btn btn-outline-primary w-100 disabled" aria-disabled="true">
+                                <i class="bi bi-eye-slash me-2"></i>Details Coming Soon
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Script to inject header -->
+            </div>
+        </section>
+
+        <hr class="my-5">
+        <section class="text-center mb-5">
+            <h2 class="display-6 fw-bold">Core Skills</h2>
+             <div class="row justify-content-center g-4 mt-4">
+                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-py display-4 text-primary"></i><p class="mt-2">Python</p></div></div>
+                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-java display-4 text-primary"></i><p class="mt-2">Java</p></div></div>
+                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-robot display-4 text-primary"></i><p class="mt-2">Machine Learning</p></div></div>
+                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-html display-4 text-primary"></i><p class="mt-2">Web Development</p></div></div>
+                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-git display-4 text-primary"></i><p class="mt-2">Git & Version Control</p></div></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <div class="modal fade" id="projectXModal" tabindex="-1" aria-labelledby="projectXModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectXModalLabel">Project X Agency: VMPT Initiative</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This pioneering internship at The University of Manchester institutionalized service learning and interdisciplinary collaboration through industry-facing projects, focusing on sustainable textile manufacturing and community engagement.</p>
+                    <h6 class="fw-bold mt-4">My Role & Responsibilities</h6>
+                    <p class="text-muted fst-italic">Note: This project involved a team of three interns with complementary skills. My focus was on [Choose and elaborate on your role: e.g., digital innovation, sustainability research, or community engagement strategy].</p>
+                    <ul>
+                        <li>Developed and piloted the Project X Agency digital platform and framework.</li>
+                        <li>Engaged with industry partners, including The Whitworth and Cunnington & Sanderson, to co-create sustainable, zero-waste textile solutions.</li>
+                        <li>Integrated research and technology such as RFID, AR, and digital printing into service-learning methodologies.</li>
+                        <li>Designed a strategic roadmap for the institutional scalability of the VMPT model.</li>
+                        <li>Created a knowledge-sharing system to document processes and findings for future student teams.</li>
+                        <li>Facilitated a project showcase and impact assessment to present findings to stakeholders.</li>
+                    </ul>
+                    <h6 class="fw-bold mt-4">Key Deliverables</h6>
+                    <ul>
+                        <li>A research-informed framework for scaling the Project X Agency model.</li>
+                        <li>A functional digital platform and operational framework for VMPT interdisciplinary learning.</li>
+                        <li>A case study on zero-waste textile innovation and community-engaged design.</li>
+                        <li>Contributions towards a potential academic article or conference presentation.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
     <script>
-        // Load Header
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header-placeholder").innerHTML = data;
-    
-                // Highlight active link
-                const currentPage = window.location.pathname.split("/").pop();
+        function loadComponent(url, placeholderId, callback) {
+            fetch(url)
+                .then(response => response.ok ? response.text() : Promise.reject('Not found'))
+                .then(data => {
+                    const placeholder = document.getElementById(placeholderId);
+                    if (placeholder) {
+                        placeholder.innerHTML = data;
+                        if (callback) callback();
+                    }
+                })
+                .catch(error => console.error(`Error loading ${url}:`, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadComponent("header.html", "header-placeholder", () => {
+                const currentPage = window.location.pathname.split("/").pop() || "index.html";
                 const navLinks = document.querySelectorAll(".nav-page");
                 navLinks.forEach(link => {
-                    if (link.getAttribute("href") === currentPage) {
+                    const linkPage = link.getAttribute("href");
+                    if (linkPage === "index.html" && (currentPage === "" || currentPage === "index.html")) {
+                        link.classList.add("active");
+                    } else if (linkPage === currentPage) {
                         link.classList.add("active");
                     }
                 });
             });
-    
-        // Load Footer
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
+            loadComponent("footer.html", "footer-placeholder");
+        });
     </script>
-    
 </body>
 </html>
