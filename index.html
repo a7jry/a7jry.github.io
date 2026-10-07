@@ -15,120 +15,334 @@
 <body>
     <div id="header-placeholder"></div>
 
-    <div class="container-fluid bg-light">
+    <!-- Hero Section -->
+    <div class="bg-light position-relative overflow-hidden">
         <div class="container">
-            <div class="row align-items-center justify-content-center min-vh-100 py-5">
-                <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold">Ahmed Al-Hajri</h1>
-                    <p class="lead text-primary fw-medium">BSc Computer Science & Mathematics Student</p>
-                    <p class="text-muted">
-                        An undergraduate at the University of Manchester with experience in applying AI and mathematics to solve real-world problems. Proven leadership through roles like President of the Omani Student Society, proficient in data science, web development, and machine learning.
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                        <a href="projects.html" class="btn btn-primary btn-lg px-4 me-md-2">View My Work</a>
-                        <a href="contact.html" class="btn btn-outline-secondary btn-lg px-4">Get In Touch</a>
+            <div class="row align-items-center min-vh-75 py-5">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="pe-lg-5">
+                        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-3">
+                            <i class="bi bi-mortarboard me-1"></i>Computer Science Student
+                        </span>
+                        <h1 class="display-4 fw-bold mb-3">
+                            Ahmed <span class="text-primary">Al-Hajri</span>
+                        </h1>
+                        <p class="fs-5 text-muted mb-3">BSc Computer Science & Mathematics</p>
+                        <p class="lead text-muted mb-4 lh-base">
+                            Passionate about applying AI and mathematics to solve real-world problems. 
+                            Currently serving as President of the Omani Student Society at the University of Manchester.
+                        </p>
+                        
+                        <!-- 
+                        <div class="row g-3 mb-4">
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <div class="fw-bold text-primary fs-4">10k</div>
+                                    <small class="text-muted">Runs Twice Weekly</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <div class="fw-bold text-primary fs-4">5+</div>
+                                    <small class="text-muted">Research Projects</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <div class="fw-bold text-primary fs-4">10,000</div>
+                                    <small class="text-muted">Word Internship Report</small>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="projects.html" class="btn btn-primary btn-lg px-4">
+                                <i class="bi bi-folder-fill me-2"></i>View My Work
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-dark btn-lg px-4">
+                                <i class="bi bi-envelope me-2"></i>Get In Touch
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center mt-4 mt-lg-0">
-                    <img src="images/me.jpg" alt="Ahmed Al-Hajri" class="img-fluid rounded-circle shadow-lg" style="max-width: 350px;">
+                
+                <div class="col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+                    <div class="position-relative d-inline-block">
+                        <div class="bg-primary rounded-circle position-absolute" style="width: 300px; height: 300px; top: 20px; left: 20px; z-index: 1; opacity: 0.1;"></div>
+                        <img src="images/me.jpg" 
+                             alt="Ahmed Al-Hajri" 
+                             class="img-fluid rounded-circle shadow-lg position-relative" 
+                             style="max-width: 320px; z-index: 2;"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format';">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container my-5">
-        <section class="text-center mb-5">
-            <h2 class="display-6 fw-bold">Featured Projects</h2>
-            <p class="lead text-muted">Here's a glimpse of what I've been working on.</p>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mt-4">
+    <!-- Skills Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-light mb-3">Technical Expertise</h2>
+            <div class="bg-primary mx-auto mb-4" style="width: 60px; height: 2px;"></div>
+            <p class="text-muted mb-0">Technologies and tools I work with</p>
+        </div>
 
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Project+X" class="card-img-top" alt="Project X Agency">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">UoM Student Project X Agency</h5>
-                            <p class="card-text text-muted">A pioneering initiative to pilot a Virtual Multi-Disciplinary Project Team (VMPT) model for industry-facing challenges.</p>
-                            <div>
-                                <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">VMPT Framework</span>
-                                <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Sustainability</span>
-                                <span class="badge bg-info-subtle text-info-emphasis rounded-pill">Service Learning</span>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="bi bi-filetype-py display-4 text-primary"></i>
+                    </div>
+                    <h6 class="fw-semibold mb-2">Python</h6>
+                    <small class="text-muted">Data Science & ML</small>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="bi bi-filetype-java display-4 text-primary"></i>
+                    </div>
+                    <h6 class="fw-semibold mb-2">Java</h6>
+                    <small class="text-muted">OOP & Algorithms</small>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="bi bi-robot display-4 text-primary"></i>
+                    </div>
+                    <h6 class="fw-semibold mb-2">Machine Learning</h6>
+                    <small class="text-muted">AI & Analytics</small>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="bi bi-code-slash display-4 text-primary"></i>
+                    </div>
+                    <h6 class="fw-semibold mb-2">Web Development</h6>
+                    <small class="text-muted">Full Stack</small>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="bi bi-git display-4 text-primary"></i>
+                    </div>
+                    <h6 class="fw-semibold mb-2">Version Control</h6>
+                    <small class="text-muted">Git & GitHub</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Project Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-light mb-3">Featured Project</h2>
+                <div class="bg-primary mx-auto mb-4" style="width: 60px; height: 2px;"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop&auto=format" 
+                                     class="img-fluid h-100 w-100" 
+                                     alt="Project X Agency"
+                                     style="object-fit: cover; border-radius: 0.375rem 0 0 0.375rem;">
                             </div>
-                        </div>
-                        <div class="card-footer bg-white border-top-0 pb-3">
-                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#projectXModal">
-                                <i class="bi bi-eye me-2"></i>View Details
-                            </button>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 p-lg-5">
+                                    <h4 class="card-title fw-bold mb-3">UoM Student Project X Agency</h4>
+                                    <p class="text-muted mb-4">
+                                        A pioneering initiative to pilot a Virtual Multi-Disciplinary Project Team (VMPT) model 
+                                        for industry-facing challenges, focusing on sustainable solutions.
+                                    </p>
+                                    
+                                    <div class="mb-4">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary rounded-pill">VMPT Framework</span>
+                                            <span class="badge bg-success-subtle text-success rounded-pill">Sustainability</span>
+                                            <span class="badge bg-info-subtle text-info rounded-pill">Service Learning</span>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectXModal">
+                                        <i class="bi bi-eye me-2"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Project+Two" class="card-img-top" alt="Another Project">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Another Awesome Project</h5>
-                            <p class="card-text text-muted">A brief description of another project you're proud of. Explain the key challenge and solution.</p>
-                            <div>
-                                <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill">Machine Learning</span>
-                                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Flask</span>
-                                <span class="badge bg-dark-subtle text-dark-emphasis rounded-pill">Python</span>
+            <!-- View All Projects Link -->
+            <div class="text-center mt-5">
+                <a href="projects.html" class="btn btn-outline-primary btn-lg px-4">
+                    <i class="bi bi-collection me-2"></i>View All Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leadership Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-light mb-3">Leadership & Experience</h2>
+            <div class="bg-primary mx-auto mb-4" style="width: 60px; height: 2px;"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5 text-center">
+                        <div class="mb-4">
+                            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-award-fill text-primary fs-1"></i>
                             </div>
                         </div>
-                        <div class="card-footer bg-white border-top-0 pb-3">
-                             <a href="#" class="btn btn-outline-primary w-100 disabled" aria-disabled="true">
-                                <i class="bi bi-eye-slash me-2"></i>Details Coming Soon
-                            </a>
+                        <h4 class="fw-bold mb-3">President, Omani Student Society</h4>
+                        <p class="text-muted mb-4">
+                            Leading a community of Omani students at the University of Manchester, 
+                            organizing cultural events, providing academic support, and fostering connections 
+                            between students and the broader community.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="fw-bold text-primary">1000+</div>
+                                <small class="text-muted">Participants</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold text-primary">25+</div>
+                                <small class="text-muted">Events Organized</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="fw-bold text-primary">2+</div>
+                                <small class="text-muted">Years Leadership</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section>
-
-        <hr class="my-5">
-        <section class="text-center mb-5">
-            <h2 class="display-6 fw-bold">Core Skills</h2>
-             <div class="row justify-content-center g-4 mt-4">
-                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-py display-4 text-primary"></i><p class="mt-2">Python</p></div></div>
-                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-java display-4 text-primary"></i><p class="mt-2">Java</p></div></div>
-                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-robot display-4 text-primary"></i><p class="mt-2">Machine Learning</p></div></div>
-                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-filetype-html display-4 text-primary"></i><p class="mt-2">Web Development</p></div></div>
-                <div class="col-auto"><div class="p-3 text-center"><i class="bi bi-git display-4 text-primary"></i><p class="mt-2">Git & Version Control</p></div></div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <div id="footer-placeholder"></div>
 
+    <!-- Project Modal -->
     <div class="modal fade" id="projectXModal" tabindex="-1" aria-labelledby="projectXModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectXModalLabel">Project X Agency: VMPT Initiative</h5>
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="projectXModalLabel">
+                        <i class="bi bi-lightbulb-fill text-primary me-2"></i>
+                        Project X Agency: VMPT Initiative
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <p>This pioneering internship at The University of Manchester institutionalized service learning and interdisciplinary collaboration through industry-facing projects, focusing on sustainable textile manufacturing and community engagement.</p>
-                    <h6 class="fw-bold mt-4">My Role & Responsibilities</h6>
-                    <p class="text-muted fst-italic">Note: This project involved a team of three interns with complementary skills. My focus was on [Choose and elaborate on your role: e.g., digital innovation, sustainability research, or community engagement strategy].</p>
-                    <ul>
-                        <li>Developed and piloted the Project X Agency digital platform and framework.</li>
-                        <li>Engaged with industry partners, including The Whitworth and Cunnington & Sanderson, to co-create sustainable, zero-waste textile solutions.</li>
-                        <li>Integrated research and technology such as RFID, AR, and digital printing into service-learning methodologies.</li>
-                        <li>Designed a strategic roadmap for the institutional scalability of the VMPT model.</li>
-                        <li>Created a knowledge-sharing system to document processes and findings for future student teams.</li>
-                        <li>Facilitated a project showcase and impact assessment to present findings to stakeholders.</li>
-                    </ul>
-                    <h6 class="fw-bold mt-4">Key Deliverables</h6>
-                    <ul>
-                        <li>A research-informed framework for scaling the Project X Agency model.</li>
-                        <li>A functional digital platform and operational framework for VMPT interdisciplinary learning.</li>
-                        <li>A case study on zero-waste textile innovation and community-engaged design.</li>
-                        <li>Contributions towards a potential academic article or conference presentation.</li>
-                    </ul>
+                <div class="modal-body p-4">
+                    <div class="mb-4">
+                        <h6 class="text-primary fw-semibold mb-2">
+                            <i class="bi bi-info-circle me-1"></i>Project Overview
+                        </h6>
+                        <p class="text-muted">
+                            This pioneering internship at The University of Manchester institutionalized service learning 
+                            and interdisciplinary collaboration through industry-facing projects, focusing on sustainable 
+                            textile manufacturing and community engagement.
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="text-primary fw-semibold mb-3">
+                            <i class="bi bi-person-badge me-1"></i>My Role & Responsibilities
+                        </h6>
+                        <p class="text-muted fst-italic small mb-3">
+                            <i class="bi bi-exclamation-circle me-1"></i>
+                            Note: This project involved a team of three interns with complementary skills. 
+                            My focus was on digital innovation and sustainability research.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Developed and piloted the Project X Agency digital platform and framework
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Engaged with industry partners for sustainable textile solutions
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Integrated RFID, AR, and digital printing technologies
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Designed strategic roadmap for VMPT model scalability
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Created knowledge-sharing system for future teams
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="text-primary fw-semibold mb-3">
+                            <i class="bi bi-trophy me-1"></i>Key Deliverables
+                        </h6>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <i class="bi bi-diagram-3-fill text-primary mb-2 d-block"></i>
+                                    <small class="fw-semibold d-block mb-1">Framework Development</small>
+                                    <small class="text-muted">Research-informed framework for scaling the Project X Agency model</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <i class="bi bi-laptop-fill text-primary mb-2 d-block"></i>
+                                    <small class="fw-semibold d-block mb-1">Digital Platform</small>
+                                    <small class="text-muted">Functional platform for VMPT interdisciplinary learning</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <i class="bi bi-recycle-fill text-primary mb-2 d-block"></i>
+                                    <small class="fw-semibold d-block mb-1">Sustainability Case Study</small>
+                                    <small class="text-muted">Zero-waste textile innovation research</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <i class="bi bi-journal-text text-primary mb-2 d-block"></i>
+                                    <small class="fw-semibold d-block mb-1">Academic Contribution</small>
+                                    <small class="text-muted">Potential academic article or conference presentation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-primary bg-opacity-5 rounded-3 p-3">
+                        <small class="text-muted">
+                            <i class="bi bi-building me-1"></i>
+                            <strong>Industry Partners:</strong> The Whitworth, Cunnington & Sanderson
+                        </small>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        <i class="bi bi-x-lg me-1"></i>Close
+                    </button>
                 </div>
             </div>
         </div>
@@ -165,7 +379,89 @@
                 });
             });
             loadComponent("footer.html", "footer-placeholder");
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
     </script>
+
+    <style>
+        .min-vh-75 {
+            min-height: 75vh;
+        }
+
+        .skill-card {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            background: white;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .skill-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1);
+        }
+
+        .bg-primary-subtle {
+            background-color: rgba(13, 110, 253, 0.1) !important;
+        }
+
+        .bg-success-subtle {
+            background-color: rgba(25, 135, 84, 0.1) !important;
+        }
+
+        .bg-info-subtle {
+            background-color: rgba(13, 202, 240, 0.1) !important;
+        }
+
+        .modal-content {
+            border-radius: 16px;
+        }
+
+        .badge {
+            font-size: 0.875rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2.5rem;
+            }
+            
+            .skill-card:hover {
+                transform: translateY(-4px);
+            }
+            
+            .min-vh-75 {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .display-4 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </body>
 </html>
